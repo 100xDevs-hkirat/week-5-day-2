@@ -47,6 +47,8 @@ function Signup() {
                     onClick={() => {
                         function callback2(data) {
                             localStorage.setItem("token", data.token);
+                            window.location = "/"
+
                         }
                         function callback1(res) {
                             res.json().then(callback2)
